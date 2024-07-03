@@ -45,12 +45,39 @@
 </style>
 <body>
     <div class="continer">
-        <img src="dice (7).png" >
+        <img src="dice (7).png" id="img">
         <div class="btn-continer">
-            <button class="btn">ROLL</button>
+            <button class="btn" onclick="roll()" id="btn">ROLL</button>
         </div>
 
     </div>
-   
+   <script>
+    function roll(){
+        let randamElement = Math.floor(Math.random() * (7-1))+1
+        let imgElement = document.getElementById("img")
+
+        switch(randamElement )
+        case 1 :
+        imgElement.scr = "dice(1).png"
+        break;
+        case 2 :
+        imgElement.scr = "dice(2).png"
+        break;
+        case 3 :
+        imgElement.scr = "dice(3).png"
+        break;
+        case 4 :
+        imgElement.scr = "dice(4).png"
+        break;
+        case 5 :
+        imgElement.scr = "dice(5).png"
+        break;
+        case 6 :
+        imgElement.scr = "dice(1).png"
+        break;
+
+
+    }
+   </script>
 </body>
 </html>
