@@ -53,28 +53,40 @@
     </div>
    <script>
     function roll(){
-        let randamElement = Math.floor(Math.random() * (7-1))+1
+        let randamElement = Math.floor(Math.random() * (7-1)) + 1
         let imgElement = document.getElementById("img")
 
-        switch(randamElement )
-        case 1 :
-        imgElement.scr = "dice(1).png"
-        break;
-        case 2 :
-        imgElement.scr = "dice(2).png"
-        break;
-        case 3 :
-        imgElement.scr = "dice(3).png"
-        break;
-        case 4 :
-        imgElement.scr = "dice(4).png"
-        break;
-        case 5 :
-        imgElement.scr = "dice(5).png"
-        break;
-        case 6 :
-        imgElement.scr = "dice(1).png"
-        break;
+        if( randamElemen == 1){
+            randamElemen.src = "dice(1).png"
+
+        }
+        else if (( randamElemen == 2))
+        {
+             randamElemen.src = "dice(2).png"
+
+        }
+        else if (( randamElemen == 3))
+        {
+             randamElemen.src = "dice(3).png"
+
+        }
+        else if (( randamElemen == 4))
+        {
+             randamElemen.src = "dice(4).png"
+
+        }
+        else if (( randamElemen == 5))
+        {
+             randamElemen.src = "dice(5).png"
+
+        }
+        else
+        {
+             randamElemen.src = "dice(6).png"
+
+        }
+        
+        
 
 
     }
