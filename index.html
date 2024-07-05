@@ -11,10 +11,10 @@
     }
     .continer{
         height: 50vh;
-        width: 50vw;
-        background-color: tomato;
+        width: 34vw;
+        background-color: rgb(233, 196, 190);
         display: block;
-        margin: 30vh auto;
+        margin: 21vh auto;
         border-radius: 10px;
         
         
@@ -45,7 +45,7 @@
 </style>
 <body>
     <div class="continer">
-        <img src="dice (7).png" id="img">
+        <img src="7.png" id="img">
         <div class="btn-continer">
             <button class="btn" onclick="roll()" id="btn">ROLL</button>
         </div>
@@ -54,35 +54,36 @@
    <script>
     function roll(){
         let randamElement = Math.floor(Math.random() * (7-1)) + 1
+        console.log(randamElement)
         let imgElement = document.getElementById("img")
 
-        if( randamElemen == 1){
-            randamElemen.src = "dice(1).png"
+        if( randamElement == 1){
+            imgElement.src = "1.png"
 
         }
-        else if ( randamElemen == 2)
+        else if ( randamElement == 2)
         {
-            imgElement.src = "dice(2).png"
+            imgElement.src = "2.png"
 
         }
-        else if ( randamElemen == 3)
+        else if ( randamElement == 3)
         {
-            imgElement.src = "dice(3).png"
+            imgElement.src = "3.png"
 
         }
-        else if ( randamElemen == 4)
+        else if ( randamElement == 4)
         {
-            imgElement.src = "dice(4).png"
+            imgElement.src = "4.png"
 
         }
-        else if ( randamElemen == 5)
+        else if ( randamElement == 5)
         {
-            imgElement.src = "dice(5).png"
+            imgElement.src = "5.png"
 
         }
         else
         {
-            imgElementen.src = "dice(6).png"
+            imgElement.src = "6.png"
 
         }
         
